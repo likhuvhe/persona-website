@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrapper ::-webkit-scrollbar {width: 10px;}
+.wrapper ::-webkit-scrollbar-thumb:hover {
+    border-radius: 10px;
+    background: #555; 
+} 
+.my-skills{
+    background-image: url(../../resources/bgSkills.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.wrapper{
+    width: 50%;
+    left: 50%; 
+    top: 50%;
+}
+.container{
+    width: 100%;
+    height: 500px;
+    padding: 30px 30px 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(255,255,255,0.06);
+    border-radius: 10px;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+    backdrop-filter: blur(10px);
+    overflow: auto;
+} 
+.container *{
+    font-family: "Poppins",sans-serif;
+    color: white;
+    font-weight: 500;
+}
+h2{
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 33px;
+    font-weight: bold;
+}
+.skills:not(:last-child){
+    margin-bottom: 30px;
+}
+.details{
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.bar{
+    position: relative;
+ 
+    border: 2px solid #0d96e0;
+ 
+    border-radius: 20px;
+  
+}
+.bar div{
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+    background-color: #0d96e0;
+   
+ 
+}
+#java-bar{
+    animation: java-fill 2s forwards;
+}
+@keyframes java-fill{
+    100%{
+        width: 60%;
+    }
+}
+#spring-boot-bar{
+    animation: spring-boot-fill 2s forwards;
+}
+@keyframes spring-boot-fill{
+    100%{
+        width: 50%;
+    }
+}
+#python-bar{
+    animation: python-fill 2s forwards;
+}
+@keyframes python-fill {
+    100%{
+        width: 55%;
+    }
+}
+#c-bar{
+    animation: c-fill 2s forwards;
+}
+@keyframes c-fill{
+    100%{
+        width: 50%;
+    }
+}
+#c-shap-bar{
+    animation: c-shap-fill 2s forwards;
+}
+@keyframes c-shap-fill{
+    100%{
+        width: 60%;
+    }
+}
+#cpp-bar{
+    animation: cpp-fill 2s forwards;
+}
+@keyframes cpp-fill{
+    100%{
+        width: 50%;
+    }
+}
+#html-bar{
+    animation: html-fill 2s forwards;
+}
+@keyframes html-fill{
+    100%{
+        width: 79%;
+    }
+}
+#css-bar{
+    animation: css-fill 2s forwards;
+}
+@keyframes css-fill{
+    100%{
+        width: 69%;
+    }
+}
+#js-bar{
+    animation: js-fill 2s forwards;
+}
+@keyframes js-fill{
+    100%{
+        width: 68%;
+    }
+}
+#sql-bar{
+    animation: sql-fill 2s forwards;
+}
+@keyframes sql-fill{
+    100%{
+        width: 60%;
+    }
+}
+#mongo-bar{
+    animation: mongo-fill 2s forwards;
+}
+@keyframes mongo-fill{
+    100%{
+        width: 58%;
+    }
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+    .my-skills{
+        background-image: url(../../resources/bgSkills.jpg);
+    }
+
+    .wrapper{
+        width: 80% !important;
+    }
+}

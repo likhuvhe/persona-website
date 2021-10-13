@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper{
+    background-image: url(../../resources/bgContact.jpeg);
+    width: 100%;
+    height: 95vh;
+    background-size: cover;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* text-align: center; */
+    color: white;
+}
+
+.c-content{
+    margin: auto;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 50px 20px 50px 20px;
+    border-radius: 10px;
+    height: 500px;
+    overflow: auto;
+}
+h1{text-align: center;}
+.contact h4{
+    padding: 10px 0px 0px 50px;
+}
+.contact{
+    padding: 40px 0px 0px 100px;
+}
+
+.contact::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+img{
+    float:left;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+}
+
+
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+    .wrapper{
+        background-image: url(../../resources/bgContact.jpeg);
+    }
+
+    .c-content{
+        width: 90% !important;
+    }
+    .contact{
+        padding: 20px 0px 0px 10px;
+    }
+}
