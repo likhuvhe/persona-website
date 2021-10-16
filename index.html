@@ -7,18 +7,20 @@
   <link rel="stylesheet" href="./src/css/index.css">
   <link rel="stylesheet" href="./src/css/header.css">
   <link rel="stylesheet" href="./src/css/socialMediaIcon.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Home</title>
 </head>
 <body>
-  <header class="header">
+  <header class="header" id="myTopnav">
     <a href="./index.html" class="active home">Home</a>
-    <div class="header-right">
       <a href="./src/html/about.html">About</a>
       <a href="./src/html/skills.html">Skills</a>
       <a href="./src/html/workexp.html">Work History</a>
       <a href="./src/html/project.html">Project</a>
       <a href="./src/html/contact.html">Contact</a>
-    </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
   </header>
   <div class="backImg">
     <section class="profile">
@@ -38,5 +40,6 @@
       </div>
     </section>  
   </div>
+  <script src="./src/js/header.js"></script>
 </body>
 </html>
