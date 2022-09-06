@@ -8,7 +8,7 @@
 
 .header a {
   float: left;
-  color: black;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -24,12 +24,12 @@
 
 .header a:hover {
   background-color: #8454DB;
-  color: black;
+  color: white;
 }
 
 .header a.active {
   background-color: #151C62;
-  color: white;
+  color: wheat;
 }
 
 .header a:not(:first-child)  {
